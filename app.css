@@ -12,7 +12,6 @@ h1 {
 #ingredients {
   grid-area: ingredients;
   margin-top: 30%;
-  text-align: center;
 }
 #imgae {
   grid-area: image;
@@ -34,6 +33,6 @@ h1 {
 
 section {
   display: grid;
-  grid-template-areas: "title title" "image ingredients" "preperation preperation" "sauce abc" "cook cook";
+  grid-template-areas: "title title" "image ingredients" "preperation  preperation" "sauce abc" "cook cook";
   grid-template-columns: 1fr 1fr;
 }
