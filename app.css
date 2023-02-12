@@ -5,19 +5,27 @@ body {
 h1 {
   text-align: center;
 }
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
 
 #title {
   grid-area: title;
 }
 #ingredients {
   grid-area: ingredients;
-  margin-top: 30%;
+  margin-top: 10vh;
 }
 #imgae {
   grid-area: image;
   image-orientation: 90grad;
 }
 #sauce {
+  display: block;
+  margin-left: 10vh;
   grid-area: sauce;
 }
 #abc {
@@ -33,6 +41,6 @@ h1 {
 
 section {
   display: grid;
-  grid-template-areas: "title title" "image ingredients" "preperation  preperation" "sauce abc" "cook cook";
+  grid-template-areas: "title title" "image ingredients" "preperation preperation" "sauce abc" "cook cook";
   grid-template-columns: 1fr 1fr;
 }
