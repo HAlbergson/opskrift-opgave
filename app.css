@@ -1,6 +1,8 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: beige;
+  margin-left: 50vh;
+  margin-right: 50vh;
 }
 h1 {
   text-align: center;
@@ -11,17 +13,24 @@ h2 {
 h3 {
   text-align: center;
 }
+.ingredietns {
+  text-align: left;
+}
 
 #title {
   grid-area: title;
 }
 #ingredients {
   grid-area: ingredients;
-  margin-top: 10vh;
+  text-align: left;
 }
 #imgae {
   grid-area: image;
-  image-orientation: 90grad;
+}
+#image > img {
+  object-fit: cover;
+  width: 70%;
+  margin-left: 10vh;
 }
 #sauce {
   display: block;
@@ -33,6 +42,7 @@ h3 {
 }
 #cook {
   grid-area: cook;
+  text-align: center;
 }
 #preperation {
   grid-area: preperation;
@@ -43,4 +53,5 @@ section {
   display: grid;
   grid-template-areas: "title title" "image ingredients" "preperation preperation" "sauce abc" "cook cook";
   grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
